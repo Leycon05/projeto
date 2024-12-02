@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Times FC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h10>Times Fc</h10>
+    <li>
+      <button id="botao-times">Times</button>
+    </li>
+  </header>
+
+  <nav id="menu-times" class="fechado">
+    <ul id="lista-times">
+      <!-- Os times salvos aparecerão aqui -->
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="h2">Crie seu time</h1>
+    <section class="times">
+      <form id="form-time">
+        <label for="nome-time" id="nome-text">Nome do Time:</label>
+        <input type="text" id="nome-time" required>
+
+        <label for="tecnico" id="tecnico-text">Técnico:</label>
+        <input type="text" id="tecnico" required>
+        
+        <label for="escudo" id="escudo-text">URL do Escudo:</label>
+        <input type="text" id="escudo" required placeholder="Insira a URL da imagem">
+
+        <button id="adicionar-time" type="submit">Salvar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Leycon e Toshio, Times Fc 2024</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

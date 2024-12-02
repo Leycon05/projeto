@@ -1,0 +1,269 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=ZCOOL+KuaiLe&display=swap');
+
+/* Configuração do layout geral */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante altura total da tela */
+}
+
+main {
+ 
+  flex: 1; /* Faz o conteúdo principal expandir */
+  
+}
+
+header {
+  background-color: #A10000;
+  color: #fff;
+  padding: 4px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+h10 {
+  font-size: 55px;
+  font-family: "ZCOOL KuaiLe";
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+#menu-times {
+  width: 350px;
+  height: 200px;
+  background-color: #f7f7f7;
+  border: 1px solid #000000;
+  margin-top: 10px;
+  right: 100px;
+  display: none;
+  margin-left: auto; 
+  margin-right: 10px;
+  overflow: auto;
+
+}
+
+#menu-times.fechado {
+  display: none;
+}
+
+#menu-times.aberto {
+  display: block;
+}
+
+#menu-times ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+section {
+  background: white;
+  border: 2px solid white;
+}
+
+#botao-times {
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  width: 124px;
+  height: 42px;
+  margin-right: 30px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+main h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.times h2 {
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.times {
+  background: white;
+  padding: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 800px;
+  max-width: 90%;
+  margin: 0 center;
+  text-align: center;
+  border: 2px solid black;
+}
+
+#form-time {
+  margin-top: 40px;
+  background: white;
+}
+
+#form-time input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+
+#lista-times {
+  padding: 0;
+  list-style-type: none;
+}
+
+#lista-times li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  width: auto;
+}
+
+#lista-times img {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#lista-times li span {
+  font-size: 18px;
+ 
+}
+
+footer {
+  background-color: #A10000;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* Garante que o footer fique no final */
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+  .times {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #form-time input {
+    width: 90%;
+  }
+}
+
+
+.h2 {
+  font-size: 80px;
+}
+
+#nome-text,
+#tecnico-text,
+#escudo-text {
+  font-size: 30px;
+}
+/* Certifique-se de que o conteúdo do formulário esteja centralizado */
+.times {
+  background: white;
+  padding: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px; /* Defini um tamanho fixo para o formulário */
+  max-width: 90%;
+  margin: 0 auto; /* Isso centraliza o conteúdo */
+  text-align: center;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#form-time {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#form-time label {
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#form-time input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+
+h1.h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #A10000;
+}
+ #adicionar-time{
+
+  background-color: #000000;
+  color: #fffcfc;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+#lista-times button {
+  margin-left: 10px;
+}
+
+#lista-times button {
+  padding: 8px 16px;
+  font-size: 12px;
+  background-color: #c90707;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  color: rgb(248, 244, 244);
+  margin-left: 10px;
+}
+
+#lista-times button:focus {
+  outline: none;
+  box-shadow: 0 0 7px rgba(11, 3, 3, 0.2);
+}
